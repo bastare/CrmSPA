@@ -12,19 +12,7 @@ import * as loaderComponents from './components';
 import * as loaderGuards from './guards';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    RouterModule,
-    ReactiveFormsModule,
-    FormsModule,
-    NgxLoadingModule.forRoot({
-      animationType: ngxLoadingAnimationTypes.wanderingCubes,
-      backdropBackgroundColour: 'rgba(255, 255, 255, 0.1)',
-      primaryColour: '#1ea',
-      secondaryColour: '#f11',
-      tertiaryColour: '#1ee'
-    })
-  ],
+  imports: [CommonModule, RouterModule, ReactiveFormsModule, FormsModule, NgxLoadingModule],
   providers: [...loaderGuards.guards],
   declarations: [...loaderComponents.components],
   exports: [...loaderComponents.components]

@@ -11,7 +11,7 @@ import { AppComponent } from './app.component';
 import { NavComponent } from '../modules/nav/nav.component';
 import { AppRoutingModule } from './app-routing.module';
 
-import { NgxLoadingModule } from 'ngx-loading';
+import { NgxLoadingModule, ngxLoadingAnimationTypes } from 'ngx-loading';
 import { ChartsModule } from 'src/modules/charts/charts.module';
 import { LoaderModule } from 'src/modules/loader/loader.module';
 
@@ -24,7 +24,13 @@ import { LoaderModule } from 'src/modules/loader/loader.module';
     BrowserAnimationsModule,
     FormsModule,
     MatProgressSpinnerModule,
-    NgxLoadingModule
+    NgxLoadingModule.forRoot({
+      animationType: ngxLoadingAnimationTypes.threeBounce,
+      backdropBackgroundColour: 'rgba(255, 255, 255, 0.1)',
+      primaryColour: '#1ea',
+      secondaryColour: '#f11',
+      tertiaryColour: '#1ee'
+    })
   ],
   exports: [],
   providers: [],
