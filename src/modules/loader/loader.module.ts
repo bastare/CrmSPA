@@ -18,7 +18,7 @@ import * as loaderGuards from './guards';
     ReactiveFormsModule,
     FormsModule,
     NgxLoadingModule.forRoot({
-      //animationType: ngxLoadingAnimationTypes.wanderingCubes,
+      animationType: ngxLoadingAnimationTypes.wanderingCubes,
       backdropBackgroundColour: 'rgba(255, 255, 255, 0.1)',
       primaryColour: '#1ea',
       secondaryColour: '#f11',
