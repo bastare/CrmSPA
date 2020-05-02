@@ -18,6 +18,7 @@ export class InvoiceService {
   constructor(private _http: HttpClient) {}
 
   getData$(): Observable<InvoiceData[]> {
+    debugger;
     return this._http
       .get<InvoiceData[]>(this.baseUrl + 'GetInvoiceData')
       .pipe(

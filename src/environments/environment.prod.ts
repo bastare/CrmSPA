@@ -2,5 +2,5 @@
 
 export const environment = {
   production: true,
-  apiUrl: 'http://crmportalex.azurewebsites.net/api/'
+  apiUrl: 'https://localhost:44366/api/'
 };
